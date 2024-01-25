@@ -3,14 +3,26 @@ import genAI from "../geminiai";
 import withPageBackground from "../hoc/withPageBackground";
 import { TMDB_API_OPTIONS, getMovieDetailsFromTitleApiUrl } from "../constants";
 import Movie from "./Movie";
+import MOCK_MOVIES from "../dummyMovies.json";
+import { useSelector } from "react-redux";
 
 const Search = () => {
   const [searchText, setSearchText] = useState("");
   const [movieResults, setMovieResults] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const user = useSelector((state) => state.user);
 
   const handleSearchTextChange = (event) => {
     setSearchText(event.target.value);
+  };
+
+  const fetchMockMovies = (event) => {
+    event.preventDefault();
+    setIsLoading(true);
+    setTimeout(() => {
+      setMovieResults(MOCK_MOVIES);
+      setIsLoading(false);
+    }, 1000);
   };
 
   const fetchMovieDetails = async (movieNames) => {
@@ -26,7 +38,6 @@ const Search = () => {
     );
 
     setMovieResults(movieResults);
-    console.log(movieResults);
     setIsLoading(false);
   };
 
@@ -45,15 +56,17 @@ const Search = () => {
 
   const isSearchTextEmpty = !searchText;
   const isSearchResultVisible = movieResults.length;
+  const showAiSearchResults = user?.email === "secretaccount@gmail.com";
+  const fetchMoviesFunc = showAiSearchResults ? fetchMovies : fetchMockMovies;
 
   return (
-    <div className="flex flex-col gap-4 p-5 pt-20">
+    <div className="flex flex-col gap-4 p-5 pt-28">
       <div
         className={`transition-all duration-300 ease-in flex items-end justify-center ${
           !isSearchResultVisible ? "h-[40vh] w-full" : "h-[10vh] w-1/3"
         }`}
       >
-        <form className="bg-black bg-opacity-80 rounded-md p-3 w-[33vw]">
+        <form className="bg-black bg-opacity-80 rounded-md p-3 w-[33vw] flex flex-col gap-2">
           <div className="flex gap-2">
             <input
               className="p-2 rounded flex-grow-[2] outline-none"
@@ -65,12 +78,15 @@ const Search = () => {
               className={`flex-1 bg-red-600 py-2 px-5 rounded text-white font-semibold ${
                 isSearchTextEmpty && "pointer-events-none cursor-not-allowed"
               }`}
-              onClick={fetchMovies}
+              onClick={fetchMoviesFunc}
               disabled={isSearchTextEmpty}
             >
               {`Search${isLoading ? "ing..." : ""}`}
             </button>
           </div>
+          <p className="text-red-500">
+            Note: Showing mock movies here to prevent api key exposure
+          </p>
         </form>
       </div>
 

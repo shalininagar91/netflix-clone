@@ -1,0 +1,196 @@
+[
+    {
+        "adult": false,
+        "backdrop_path": "/i1K9Bmq8oO0mkUJRNW7mXIWkzcn.jpg",
+        "genre_ids": [
+            14,
+            28,
+            12
+        ],
+        "id": 496331,
+        "original_language": "hi",
+        "original_title": "ब्रह्मास्त्र पहला भाग: शिवा",
+        "overview": "The story of Shiva – a young man on the brink of an epic love, with a girl named Isha. But their world is turned upside down when Shiva learns that he has a mysterious connection to the Brahmāstra... and a great power within him that he doesn’t understand just yet - the power of Fire.",
+        "popularity": 12.9,
+        "poster_path": "/x61qdvHIsr9U53FwoLVDQqAGur0.jpg",
+        "release_date": "2022-09-08",
+        "title": "Brahmāstra Part One: Shiva",
+        "video": false,
+        "vote_average": 6.443,
+        "vote_count": 148
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/3DQ24HqWnGkWnzdSPaplSgKZp4y.jpg",
+        "genre_ids": [
+            10749,
+            18
+        ],
+        "id": 911645,
+        "original_language": "hi",
+        "original_title": "गहराइयाँ",
+        "overview": "Alisha Khanna, 30, ambitious, now finds herself at crossroads in life. Her six year long relationship has grown monotonous, her career seems to be going nowhere. But just when she had begun to accept this reality as unchangeable, her life is usurped by the arrival of her cousin, Tia and her fiancé, Zain, with whom she bonds over a troubled past and a common wish to break from its confines.",
+        "popularity": 5.159,
+        "poster_path": "/AqqMoV3o83oiPZSUrBBeujKnk1n.jpg",
+        "release_date": "2022-02-11",
+        "title": "Gehraiyaan",
+        "video": false,
+        "vote_average": 5.917,
+        "vote_count": 24
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/49czdTl4eA6YHrE7hqKUvzgWi5W.jpg",
+        "genre_ids": [
+            80,
+            18,
+            36
+        ],
+        "id": 664332,
+        "original_language": "hi",
+        "original_title": "गंगूबाई काठियावाड़ी",
+        "overview": "Duped and sold to a brothel, a young woman fearlessly reclaims her power, using underworld connections to preside over the world she was once a pawn in.",
+        "popularity": 10.765,
+        "poster_path": "/wHPEKlzg7CaJFCjWlMdZKpCRIDl.jpg",
+        "release_date": "2022-02-24",
+        "title": "Gangubai Kathiawadi",
+        "video": false,
+        "vote_average": 7.369,
+        "vote_count": 130
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/pOEwPqwK4rfKaM1UJKU3eyWUtVF.jpg",
+        "genre_ids": [
+            28,
+            35,
+            80
+        ],
+        "id": 783461,
+        "original_language": "hi",
+        "original_title": "लूप लपेटा",
+        "overview": "When her boyfriend loses a mobster's cash, Savi races against the clock to save the day — if only she can break out of a curious cycle of dead ends.",
+        "popularity": 21.936,
+        "poster_path": "/onGdT8sYi89drvSJyEJnft97rOq.jpg",
+        "release_date": "2022-02-04",
+        "title": "Looop Lapeta",
+        "video": false,
+        "vote_average": 6.083,
+        "vote_count": 60
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/lR16EpirL7HWMHQ8HjkBiB9xGeS.jpg",
+        "genre_ids": [
+            35,
+            18
+        ],
+        "id": 754716,
+        "original_language": "hi",
+        "original_title": "बधाई दो",
+        "overview": "A gay cop and a lesbian teacher enter a sham marriage to pacify their families but find that relationships — both real and fake — aren't all that easy.",
+        "popularity": 7.42,
+        "poster_path": "/2IOCys56t4iOMj9ZoVZ7zmi2RHL.jpg",
+        "release_date": "2022-02-11",
+        "title": "Badhaai Do",
+        "video": false,
+        "vote_average": 6.685,
+        "vote_count": 55
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/u1TsfBfbgvyu29QbjEpCGttVIo4.jpg",
+        "genre_ids": [
+            18,
+            10749,
+            80
+        ],
+        "id": 755836,
+        "original_language": "hi",
+        "original_title": "चंडीगढ़ करे आशिकी",
+        "overview": "Manu, a bodybuilder from Chandigarh, India, falls in love with Maanvi, a Zumba teacher. All seems well until a revelation causes turmoil in their love story.",
+        "popularity": 4.645,
+        "poster_path": "/owZYxR8y78tkkEd6mSH2olPsakJ.jpg",
+        "release_date": "2021-12-10",
+        "title": "Chandigarh Kare Aashiqui",
+        "video": false,
+        "vote_average": 6.188,
+        "vote_count": 32
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/7z95S3AWTrhaEclV5bxzB3YJFJ1.jpg",
+        "genre_ids": [
+            35
+        ],
+        "id": 1089624,
+        "original_language": "en",
+        "original_title": "Jersey",
+        "overview": "There's family you love, there's family you hate... and then there's your mother.",
+        "popularity": 0.6,
+        "poster_path": "/bqAXM5tolhNYgdExykGaCe85ucm.jpg",
+        "release_date": "",
+        "title": "Jersey",
+        "video": false,
+        "vote_average": 0,
+        "vote_count": 0
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/zBhopm8AWhGAMaDmnsmcaKaC5S5.jpg",
+        "genre_ids": [
+            28,
+            35
+        ],
+        "id": 73578,
+        "original_language": "te",
+        "original_title": "జల్సా",
+        "overview": "Sanjay falls in love with Indu. Her father Rammohan Reddy doesnt approve of it and she is married to someone else. Later, Bhagyamathi falls for him and he goes to meet her father who turns out to be Rammohan Reddy. Somewhere in between Sanjay's life as a Naxal is depicted.",
+        "popularity": 4.125,
+        "poster_path": "/sAc0AX16f0jBlVfU85XbaU9ZKI2.jpg",
+        "release_date": "2008-04-02",
+        "title": "Jalsa",
+        "video": false,
+        "vote_average": 6.688,
+        "vote_count": 16
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/cXGpQsr2Ha0NSZYINSqRokIvnhV.jpg",
+        "genre_ids": [
+            35,
+            18
+        ],
+        "id": 678999,
+        "original_language": "hi",
+        "original_title": "जयेशभाई जोरदार",
+        "overview": "A non-confrontational Jayesh decides to defy his patriarchal family and flee with his pregnant wife Mudra to save their unborn daughter from foeticide. A screwball, hilarious chase begins as Jayesh's father assembles all his might to nab them. Will this unlikely hero manage to create a safe and equal haven for his daughter?",
+        "popularity": 3.967,
+        "poster_path": "/dv93VspYwwNPbvdB0AcddhiDrGU.jpg",
+        "release_date": "2022-05-13",
+        "title": "Jayeshbhai Jordaar",
+        "video": false,
+        "vote_average": 6,
+        "vote_count": 18
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/ba9TgAO4I8RyA2LljzR3MspHaM9.jpg",
+        "genre_ids": [
+            28,
+            878,
+            53
+        ],
+        "id": 799155,
+        "original_language": "hi",
+        "original_title": "Attack",
+        "overview": "With the Parliament under siege, India’s first super soldier Arjun Shergill is tasked to get hold of the terrorists in the nick of time, save the Prime Minister from their clutches and stop a dirty bomb from exploding and destroying Delhi. Will Arjun succeed in his mission?",
+        "popularity": 816.985,
+        "poster_path": "/5jGKbYuZtdxSNOocI6ZziQeiY4n.jpg",
+        "release_date": "2022-04-01",
+        "title": "Attack",
+        "video": false,
+        "vote_average": 7.097,
+        "vote_count": 36
+    }
+]
