@@ -4,7 +4,6 @@ import {
   json,
   redirect,
   useActionData,
-  useNavigate,
   useSearchParams,
 } from "react-router-dom";
 import {
@@ -17,15 +16,12 @@ import { auth } from "../firebase";
 import googleLogo from "../assets/googleLogo.png";
 import { useGoogleLogin } from "@react-oauth/google";
 import { useState } from "react";
-import PageBackground from "./PageBackground";
 import withPageBackground from "../hoc/withPageBackground";
 
 const Login = () => {
   const [searchParams] = useSearchParams();
-  // const [user, setUser] = useState();
-  // const [profileInfo, setProfileInfo] = useState();
   const [googleLoginError, setGoogleLoginError] = useState("");
-  // const navigate = useNavigate();
+
   const googleLogin = useGoogleLogin({
     onSuccess: (response) => {
       console.log(response);
@@ -47,26 +43,6 @@ const Login = () => {
   const { message: { errors, errorMsg } = {} } = useActionData() || {};
   const showLogin = searchParams.get("mode") === "login";
   const formTitle = showLogin ? "Sign In" : "Sign Up";
-
-  // useEffect(() => {
-  //   const fetchUserDetails = async () => {
-  //     const response = await fetch(
-  //       "https://www.googleapis.com/oauth2/v1/userinfo",
-  //       {
-  //         headers: {
-  //           Authorization: `Bearer ${user.access_token}`,
-  //           "Content-Type": "application/json",
-  //         },
-  //       }
-  //     );
-  //     const userInfo = await response.json();
-  //     setProfileInfo(userInfo);
-  //     navigate("/");
-  //   };
-  //   if (user) {
-  //     fetchUserDetails();
-  //   }
-  // }, [user]);
 
   return (
     <div className="pt-24">

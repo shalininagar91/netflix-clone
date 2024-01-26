@@ -60,7 +60,7 @@ const Search = () => {
   const fetchMoviesFunc = showAiSearchResults ? fetchMovies : fetchMockMovies;
 
   return (
-    <div className="flex flex-col gap-4 p-5 pt-28">
+    <div className="flex flex-col gap-4 p-5 pt-24">
       <div
         className={`transition-all duration-300 ease-in flex items-end justify-center ${
           !isSearchResultVisible ? "h-[40vh] w-full" : "h-[10vh] w-1/3"
@@ -84,9 +84,11 @@ const Search = () => {
               {`Search${isLoading ? "ing..." : ""}`}
             </button>
           </div>
-          <p className="text-red-500">
-            Note: Showing mock movies here to prevent api key exposure
-          </p>
+          {!showAiSearchResults && (
+            <p className="text-red-500">
+              Note: Showing mock movies here to prevent api key exposure
+            </p>
+          )}
         </form>
       </div>
 
