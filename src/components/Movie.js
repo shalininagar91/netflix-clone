@@ -5,10 +5,12 @@ const Movie = ({ data }) => {
   return (
     <div className="rounded overflow-hidden h-full">
       <img
+        width="150"
+        height="225"
         src={`${TMDB_IMAGE_URL}${data.poster_path}`}
         alt={data.title}
         loading="lazy"
-        className="h-full object-cover"
+        className="w-full h-auto object-cover"
       />
     </div>
   );

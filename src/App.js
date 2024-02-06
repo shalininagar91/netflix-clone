@@ -1,17 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./components/AppLayout";
-import { authAction } from "./components/Login";
+import Login, { authAction } from "./components/Login";
 import { logoutAction } from "./components/Logout";
 import { Provider } from "react-redux";
 import appStore from "./store/appStore";
+import Browse from "./components/Browse";
 import React from "react";
 
-const Login = React.lazy(() =>
-  import(/* webpackChunkName: 'login' */ "./components/Login")
-);
-const Browse = React.lazy(() =>
-  import(/* webpackChunkName: 'browse' */ "./components/Browse")
-);
 const Search = React.lazy(() =>
   import(/* webpackChunkName: 'search' */ "./components/Search")
 );

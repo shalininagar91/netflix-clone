@@ -7,7 +7,13 @@ const Header = () => {
   const user = useSelector((state) => state.user);
   return (
     <header className="bg-gradient-to-b from-black bg-opacity-50 absolute top-0 w-full flex justify-between px-5 items-center">
-      <img className="w-[180px]" src={netflixLogo} alt="Netflix logo" />
+      <img
+        className="w-[180px] h-auto"
+        width="180"
+        height="80"
+        src={netflixLogo}
+        alt="Netflix logo"
+      />
       {user && (
         <nav>
           <ul className="flex justify-between gap-3 items-center text-white">
