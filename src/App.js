@@ -1,25 +1,34 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./components/AppLayout";
-import Login, { authAction } from "./components/Login";
-import Browse from "./components/Browse";
+import { authAction } from "./components/Login";
 import { logoutAction } from "./components/Logout";
 import { Provider } from "react-redux";
 import appStore from "./store/appStore";
-import Search from "./components/Search";
+import React from "react";
+
+const Login = React.lazy(() =>
+  import(/* webpackChunkName: 'login' */ "./components/Login")
+);
+const Browse = React.lazy(() =>
+  import(/* webpackChunkName: 'browse' */ "./components/Browse")
+);
+const Search = React.lazy(() =>
+  import(/* webpackChunkName: 'search' */ "./components/Search")
+);
 
 const BrowserRouter = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
     children: [
-      { path: "/auth", element: <Login />, action: authAction },
-      { path: "/logout", action: logoutAction },
+      { path: "auth", element: <Login />, action: authAction },
+      { path: "logout", action: logoutAction },
       {
-        path: "/browse",
+        path: "browse",
         element: <Browse />,
       },
       {
-        path: "/search",
+        path: "search",
         element: <Search />,
       },
     ],

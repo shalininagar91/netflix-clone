@@ -28,16 +28,18 @@ const HeroMovie = () => {
     }
   }, [heroMovie]);
 
-  if (!movieTrailer) return;
   return (
     <div className="bg-gradient-to-r from-black to-10%">
-      <iframe
-        className="w-full aspect-video object-cover relative -z-10"
-        src={`https://www.youtube.com/embed/${movieTrailer.key}?si=SjzeJB9Z-E2Kadpn&amp;controls=0&autoplay=1&mute=1&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1`}
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      ></iframe>
+      {!movieTrailer && <div className="bg-black h-screen"></div>}
+      {movieTrailer && (
+        <iframe
+          className="w-full aspect-video object-cover relative -z-10 bg-black"
+          src={`https://www.youtube.com/embed/${movieTrailer.key}?si=SjzeJB9Z-E2Kadpn&amp;controls=0&autoplay=1&mute=1&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1`}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      )}
       <div className="flex flex-col gap-5 absolute left-12 top-1/2 text-white">
         <h2 className="text-4xl font-semibold">{originalTitle}</h2>
         <p className="w-1/3">{overview}</p>

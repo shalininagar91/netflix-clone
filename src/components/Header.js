@@ -18,7 +18,7 @@ const Header = () => {
               <img
                 className="w-8 h-8 rounded-full"
                 src={user.photoURL ?? defaultUserIcon}
-                alt={user.displayName}
+                alt={user.displayName || "Profile Icon"}
               />
             </li>
             <li>

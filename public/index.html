@@ -9,12 +9,13 @@
       name="description"
       content="Netflix AI is a movie streaming service powered by TMDB APIs and movie search enhanced with Google Gemini AI."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="preconnect" href="https://api.themoviedb.org" crossorigin>
+    <link rel="preconnect" href="https://accounts.google.com" crossorigin>
+    <link rel="preconnect" href="https://firebase.googleapis.com" crossorigin>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -25,6 +26,7 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Netflix AI</title>
+    <meta name="google-site-verification" content="9r8Gr5k1d_-ISBscXeySlNvehixG14wqmQpHvLSq7u8" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

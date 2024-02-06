@@ -37,7 +37,7 @@ const withHorizontalScrollButtons = (WrappedComponent) => {
         />
         {showLeftScrollBtn && (
           <button
-            className="absolute h-full w-16 bg-gradient-to-r from-black bg-opacity-90 flex justify-center items-center text-white font-bold text-4xl z-10 top-0"
+            className="absolute h-full w-16 bg-gradient-to-r from-black bg-opacity-90 flex justify-center items-center opacity-75 hover:opacity-100 text-white font-bold text-4xl z-10 top-0"
             onClick={(e) => handleListScroll(-scrollStep)}
           >
             {"<"}
@@ -46,7 +46,7 @@ const withHorizontalScrollButtons = (WrappedComponent) => {
 
         {showRightScrollBtn && (
           <button
-            className="absolute h-full w-16 bg-gradient-to-l from-black bg-opacity-90 flex justify-center items-center text-white font-bold text-4xl z-10 top-0 right-0"
+            className="absolute h-full w-16 bg-gradient-to-l from-black bg-opacity-90 flex justify-center items-center opacity-75 hover:opacity-100 text-white font-bold text-4xl z-10 top-0 right-0"
             onClick={(e) => handleListScroll(scrollStep)}
           >
             {">"}
